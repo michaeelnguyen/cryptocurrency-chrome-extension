@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cryptocurrency Chrome Extension</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popup.min.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+        <h5>Cryptocurrency Market Prices</h5>
+        <div class="row">
+            <div class="column left" id="disclaimer">
+                * Top 50 rankings based on Total Market Cap.<br>
+                <strong>* Updates every 5 minutes.</strong><br>
+                * Please reopen extension to reflect changes.
+            </div>
+            <div class="column right" id="coinmarket">
+                Data provided by
+                <a href="https://coinmarketcap.com/" target="_blank">coinmarketcap.com</a>
+            </div>
+        </div>
+    </div>
+    <input type="text" id="search" placeholder="Search for cryptocurrency...">
+    <table class="table table-striped" id="currency_table">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price (USD)</th>
+            <th>Change (1hr)</th>
+            <th>Change (24hr)</th>
+        </tr>
+        <tbody id="table_body">
+        </tbody>    
+    </table>
+  </body>
+</html>
