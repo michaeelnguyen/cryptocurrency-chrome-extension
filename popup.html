@@ -3,28 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Cryptocurrency Chrome Extension</title>
-
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
     <link rel="stylesheet" type="text/css" href="css/popup.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/popup.min.js"></script>
   </head>
   <body>
     <div class="jumbotron text-center">
-        <h5>Cryptocurrency Market Prices</h5>
-        <div class="row">
-            <div class="column left" id="disclaimer">
-                * Top 50 rankings based on Total Market Cap.<br>
-                <strong>* Updates every 5 minutes.</strong><br>
-                * Please reopen extension to reflect changes.
-            </div>
-            <div class="column right" id="coinmarket">
-                Data provided by
-                <a href="https://coinmarketcap.com/" target="_blank">coinmarketcap.com</a>
-            </div>
+        <h4>Cryptocurrency Market Prices</h4>
+        <div id="coinmarket">
+            Data provided by
+            <a href="https://coinmarketcap.com/" target="_blank">coinmarketcap.com</a>
         </div>
     </div>
     <input type="text" id="search" placeholder="Search for cryptocurrency...">
